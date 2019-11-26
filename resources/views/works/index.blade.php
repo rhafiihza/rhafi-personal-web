@@ -20,8 +20,8 @@
                     <div class="card border-0 shadow">
                         <img src="{{ $data->icon }}" class="card-img-top" alt="...">
                         <div class="card-body text-center box-content">
-                            <h5 class="card-title mb-0 text-white">{{ $data->title }}</h5>
-                            <div class="card-text text-white-50">{{ $data->content }}</div>
+                            <h5 class="card-title mb-0 text-white bg-info">{{ $data->title }}</h5>
+                            <div class="card-text text-white-50 bg-info">{{ $data->content }}</div>
                         </div>
                     </div>
                 </a>

@@ -11,12 +11,12 @@ class WorksSeeder extends Seeder
      */
     public function run()
     {
-        $binaryFile = '../../public/img/logo.png';
+        $binaryFile = 'http://localhost/rhafi-personal-web/public/img/e-commerce.png';
         DB::table('works')->insert([
             [
                 'icon' => $binaryFile,
-                'title' => "DESIGN",
-                'content' => "Banner"
+                'title' => "E-COMMERCE",
+                'content' => "Flower Store"
             ]
         ]);
     }
