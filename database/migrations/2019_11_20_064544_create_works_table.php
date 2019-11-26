@@ -15,7 +15,7 @@ class CreateWorksTable extends Migration
     {
         Schema::create('works', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('icon');
+            $table->('icon');
             $table->string('title');
             $table->string('content');
             $table->timestamps();

@@ -9,7 +9,7 @@ class WorksController extends Controller
 {
     public function index()
     {
-        $data = \App\Works;
-        return view('works.index', ['data' => $data]);
+        $works = Works::all();
+        return view('works.index', ['works' => $works]);
     }
 }

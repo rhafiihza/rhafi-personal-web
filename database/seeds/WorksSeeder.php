@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Works extends Seeder
+class WorksSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,10 +11,10 @@ class Works extends Seeder
      */
     public function run()
     {
-        //
+        $binaryFile = '../../public/img/logo.png';
         DB::table('works')->insert([
             [
-                'icon' => "logo2.png",
+                'icon' => $binaryFile,
                 'title' => "DESIGN",
                 'content' => "Banner"
             ]

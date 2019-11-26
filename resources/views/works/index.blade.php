@@ -13,45 +13,20 @@
     <section class="container" id="works">
         <h1 class="text-center mt-lg-5 mb-lg-5">Works</h1>
         <div class="row">
-        @foreach($data as $li)
-        <li>{{ $li->name }}</li>
-        @endforeach
-            {{-- <!-- Works 1 -->
+        @foreach($works as $data)
+            <!-- Works 1 -->
             <div class="col-4 mb-4">
                 <a href="" class="box4">
                     <div class="card border-0 shadow">
-                        <img src="{{asset('img/design.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ $data->icon }}" class="card-img-top" alt="...">
                         <div class="card-body text-center box-content">
-                            <h5 class="card-title mb-0 text-white">DESIGN</h5>
-                            <div class="card-text text-white-50">Banner</div>
+                            <h5 class="card-title mb-0 text-white">{{ $data->title }}</h5>
+                            <div class="card-text text-white-50">{{ $data->content }}</div>
                         </div>
                     </div>
                 </a>
             </div>
-            <!-- Works 2 -->
-            <div class="col-4 mb-4 ">
-                <a href="" class="box4">
-                    <div class="card border-0 shadow ">
-                        <img src="{{asset('img/logo.png')}}" class="card-img-top" alt="...">
-                        <div class="card-body text-center box-content">
-                            <h5 class="card-title mb-0 text-white">DESIGN</h5>
-                            <div class="card-text text-white-50">Logo</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Works 3 -->
-            <div class="col-4 mb-4 ">
-                <a href="" class="box4">
-                    <div class="card border-0 shadow">
-                        <img src="{{asset('img/e-commerce.png')}}" class="card-img-top" alt="...">
-                        <div class="card-body text-center box-content">
-                            <h5 class="card-title mb-0 text-dark">WEB E-COMMERCE</h5>
-                            <div class="card-text text-black-50">Flowers Store</div>
-                        </div>
-                    </div>
-                </a>
-            </div> --}}
+            @endforeach
         </div>
         <!-- /.row -->
     </section>

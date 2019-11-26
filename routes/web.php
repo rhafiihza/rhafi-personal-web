@@ -20,4 +20,4 @@ Route::get('/', function () {
     return view('works.index');
 });
 
-Route::resource("works", "WorksController");
+Route::resource('works', 'WorksController');
