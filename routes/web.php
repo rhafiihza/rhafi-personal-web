@@ -16,5 +16,8 @@
 // });
 
 Route::get('/', function () {
-    return view('rhafi-personal-web.index');
+
+    return view('works.index');
 });
+
+Route::resource("works", "WorksController");

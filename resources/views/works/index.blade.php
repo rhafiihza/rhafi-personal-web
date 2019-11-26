@@ -3,6 +3,7 @@
 @section('content')
     <!-- Full Page Image Header with Vertically Centered Content -->
     <header class="masthead">
+        
         <div class="container h-100">
             <div class="row h-100 align-items-center">
             </div>
@@ -12,11 +13,14 @@
     <section class="container" id="works">
         <h1 class="text-center mt-lg-5 mb-lg-5">Works</h1>
         <div class="row">
-            <!-- Works 1 -->
+        @foreach($data as $li)
+        <li>{{ $li->name }}</li>
+        @endforeach
+            {{-- <!-- Works 1 -->
             <div class="col-4 mb-4">
                 <a href="" class="box4">
                     <div class="card border-0 shadow">
-                        <img src="/img/design.png" class="card-img-top" alt="...">
+                        <img src="{{asset('img/design.png')}}" class="card-img-top" alt="...">
                         <div class="card-body text-center box-content">
                             <h5 class="card-title mb-0 text-white">DESIGN</h5>
                             <div class="card-text text-white-50">Banner</div>
@@ -28,7 +32,7 @@
             <div class="col-4 mb-4 ">
                 <a href="" class="box4">
                     <div class="card border-0 shadow ">
-                        <img src="/img/logo.png" class="card-img-top" alt="...">
+                        <img src="{{asset('img/logo.png')}}" class="card-img-top" alt="...">
                         <div class="card-body text-center box-content">
                             <h5 class="card-title mb-0 text-white">DESIGN</h5>
                             <div class="card-text text-white-50">Logo</div>
@@ -40,14 +44,14 @@
             <div class="col-4 mb-4 ">
                 <a href="" class="box4">
                     <div class="card border-0 shadow">
-                        <img src="/img/e-commerce.png" class="card-img-top" alt="...">
+                        <img src="{{asset('img/e-commerce.png')}}" class="card-img-top" alt="...">
                         <div class="card-body text-center box-content">
                             <h5 class="card-title mb-0 text-dark">WEB E-COMMERCE</h5>
                             <div class="card-text text-black-50">Flowers Store</div>
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> --}}
         </div>
         <!-- /.row -->
     </section>
@@ -55,7 +59,7 @@
     <!-- ABOUT -->
     <section class="jumbotron jumbotron-fluid" id="about">
         <div class="container text-center p-lg-5">
-            <img src="/img/6.jpg" alt="" class="rounded-circle" width="250px" height=250px">
+            <img src="{{asset('img/6.jpg')}}" alt="" class="rounded-circle" width="250px" height=250px">
             <h1 class=" display-5 ">RHAFI IHZA RAJA</h1>
             <p class=" lead ">This is a modified jumbotron that occupies the entire horizontal space of its parent.
             </p>

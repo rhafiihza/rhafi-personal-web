@@ -1,10 +1,7 @@
 //IMPORT FONT AWESOME dari node_modules
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 //IMPORT BOOTSTRAP dari node_modules
-@import '~bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 // Set Color Used in the Rhafi Personal Web
 @import 'variables.scss';
 // Base of the Rhafi Personal Web like a margin padding dll
