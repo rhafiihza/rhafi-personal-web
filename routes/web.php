@@ -15,9 +15,9 @@
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
+// Route::get('/', function () {
 
-    return view('works.index');
-});
+//     return view('works.index');
+// });
 
-Route::resource('works', 'WorksController');
+Route::resource('/', 'WorksController');
