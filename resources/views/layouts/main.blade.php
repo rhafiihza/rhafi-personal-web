@@ -15,23 +15,25 @@
     <!-- Main CSS -->
     <!-- Fontawesome --> <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="{{asset('css/app.css') }}">
+    <!-- CUSTOM -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <title>Rhafi Personal Web</title>
 
 </head>
 
-<body id="page-top">
+<body id="page-top" style="font-family: 'Montserrat', sans-serif;">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="{{asset('img/logo-navbar.png')}}" alt=""
-                    style="width: 80px; height:30px ;"></a>
+                    style="width: 150px; height:70px ;"></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#page-top">Home
                             <span class="sr-only">(current)</span>

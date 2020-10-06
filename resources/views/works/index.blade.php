@@ -3,29 +3,40 @@
 @section('content')
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header class="masthead">
-    <div class="container h-100">
+    <!-- <div class="container h-100">
         <div class="row h-100 align-items-center">
+        </div>
+    </div> -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <img src="{{asset('img/foto_header.jpg')}}" class="card-img-top img-thumbnail" alt="...">
+                </div>
+                <div class="col-4 align-middle">
+                    <h1 class="display-4 mb-5">About Me</h1>
+                    <p class="lead">Hi, i'm Back End Developer using Framework Laravel and Codeigniter for PHP Programming Language, other skills that i have HTML, CSS, Javascript and also like to design as my hobby using Adobe Illustrator and Adobe Photoshop</p>
+                </div>
+            </div>
         </div>
     </div>
 </header>
 <!-- Page Content -->
 <!-- Works -->
 <section class="container" id="works">
-    <h1 class="text-center mt-lg-5 mb-lg-5">Works</h1>
+    <h1 class="text-center mt-5 mb-5">Works</h1>
     <div class="row">
-        @foreach($works as $data)
-        <div class="col-4 mb-4">
-            <a href="" class="box4">
-                <div class="card border-0 shadow">
-                    <img src="{{ $data->icon }}" class="card-img-top" alt="...">
-                    <div class="card-body text-center box-content">
-                        <h5 class="card-title mb-0 text-white bg-info">{{ $data->title }}</h5>
-                        <div class="card-text text-white-50 bg-info">{{ $data->content }}</div>
-                    </div>
-                </div>
-            </a>
+        <div class="bg-pill-1">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mt-5"><img src="{{asset('img/design.png')}}" style="width: 200px; height:200px;" alt=""></div>
+                <div class="col-lg-8 mb-5 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum vel doloremque fuga. Tempore consequuntur ullam vitae consequatur odio est sequi ipsa! Ab vel, quod consectetur natus ea exercitationem dolor.</div>
+            </div>
         </div>
-        @endforeach
+        <div class="bg-pill-2 shadow-lg">
+            <div class="col-lg-4 mb-5 mt-5"><img src="{{asset('img/design.png')}}" style="width: 200px; height:200px;" alt=""></div>
+            <div class="col-lg-8 mb-5 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum vel doloremque fuga. Tempore consequuntur ullam vitae consequatur odio est sequi ipsa! Ab vel, quod consectetur natus ea exercitationem dolor.</div>
+        </div>
+        
     </div>
     <!-- /.row -->
 </section>
@@ -33,7 +44,8 @@
 <!-- /.container -->
 <!-- ABOUT -->
 <section class="jumbotron jumbotron-fluid" id="about">
-    <h1 class="text-center">About</h1>
+    <h1 class="text-center section-title">About</h1>
+    <hr class="w-25">
     <div class="container text-center p-lg-5">
         <img src="{{asset('img/profile.jpg')}}" alt="" class="rounded-circle" width="200px" height=250px">
         <h1 class=" display-5 ">RHAFI IHZA RAJA</h1>
