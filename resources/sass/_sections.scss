@@ -1,74 +1,186 @@
 //WORKS
-.bg-pill-1 {
-    margin-bottom: 5rem;
-    background-color: navy;
-    margin-left: -20rem;
-    padding-left: 20rem;
-    border-radius: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.card{
+    border: none !important;
+    width: 100%;
 }
 
-.bg-pill-2 {
-    margin-bottom: 5rem;
-    // margin-right: -20rem;
-    // padding-right: 20rem;;
-    border-radius: 200px;
-    border-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card-img-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0px;
+}
+
+.card:hover .card-img{
+    opacity: 0.3;
+}
+
+.card:hover .card-img-overlay{
+    opacity: 1;
 }
 
 // SKILLS
-.flex-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
+
+.container-custom{
+    height: 50%;
+    width: 10%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.single-chart {
-    width: 33%;
-    justify-content: space-around;
+.container-custom .rail{
+    stroke: white;
 }
 
-.circular-chart {
+.container-custom .progress{
+    stroke: navy;
+}
+
+.container-custom .percentage{
+    color: white;
+}
+
+.gauge-container{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+}
+
+.gauge-container .gauge{
+    position: relative;
     display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
 }
 
-.circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
+.gauge-container .gauge circle{
+    stroke-width: 15;
 }
 
-.circle {
+.gauge-container .gauge .rail{
+    fill: transparent;
+}
+
+.gauge-container .center{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+    color: white;
+}
+
+.gauge-container .center.percentage{
+    font-size: 2vw;
+}
+
+.gauge-container .center.percentSymbol{
+    font-size: 0.8em;
+}
+
+.gauge-container .center.value{
+    font-size: 1.9em;
+}
+
+span.value{
+    color: white;
+    font-weight: bold;
+}
+
+.display-container {
+    margin: auto;
+    display: flex;
+  }
+
+  .note-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px;
+  }
+
+
+  .circle__progress {
     fill: none;
-    stroke-width: 2.8;
+    stroke-width: 3;
+    stroke-opacity: 0.3;
     stroke-linecap: round;
-    animation: progress 1s ease-out forwards;
-}
+  }
+  
+  .note-display:nth-child(1) .circle__progress { stroke: #AAFF00; }
+  .note-display:nth-child(2) .circle__progress { stroke: #FF00AA; }
+  .note-display:nth-child(3) .circle__progress { stroke: #AA00FF; }
+  .note-display:nth-child(4) .circle__progress { stroke: #00AAFF; }
 
-@keyframes progress {
-    0% {
-        stroke-dasharray: 0 100;
-    }
-}
 
-.circular-chart.orange .circle {
-    stroke: #ff9f00;
-}
 
-.circular-chart.green .circle {
-    stroke: #4CC790;
-}
 
-.circular-chart.blue .circle {
-    stroke: #3c9ee5;
-}
+// .flex-wrapper {
+//     display: flex;
+//     flex-flow: row nowrap;
+// }
 
-.percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-}
+// .single-chart {
+//     width: 33%;
+//     justify-content: space-around;
+// }
+
+// .circular-chart {
+//     display: block;
+//     margin: 10px auto;
+//     max-width: 80%;
+//     max-height: 250px;
+// }
+
+// .circle-bg {
+//     fill: none;
+//     stroke: #eee;
+//     stroke-width: 3.8;
+// }
+
+// .circle {
+//     fill: none;
+//     stroke-width: 2.8;
+//     stroke-linecap: round;
+//     animation: progress 1s ease-out forwards;
+// }
+
+// @keyframes progress {
+//     0% {
+//         stroke-dasharray: 0 100;
+//     }
+// }
+
+// .circular-chart.orange .circle {
+//     stroke: #ff9f00;
+// }
+
+// .circular-chart.green .circle {
+//     stroke: #4CC790;
+// }
+
+// .circular-chart.blue .circle {
+//     stroke: #3c9ee5;
+// }
+
+// .percentage {
+//     fill: #666;
+//     font-family: sans-serif;
+//     font-size: 0.5em;
+//     text-anchor: middle;
+// }
