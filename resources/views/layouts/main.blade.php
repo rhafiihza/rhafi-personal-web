@@ -1,3 +1,4 @@
+<?php header("Refresh:0");?>
 <!doctype html>
 <html lang="en">
 
