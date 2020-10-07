@@ -11,7 +11,10 @@ class WorksSeeder extends Seeder
      */
     public function run()
     {
-        $binaryFile = 'http://localhost/rhafi-personal-web/public/img/e-commerce.png';
+        // $binaryFile = 'http://localhost/rhafi-personal-web/public/images/website-penggajian.png';
+        // $binaryFile = 'http://localhost/rhafi-personal-web/public/images/web-psi.png';
+        // $binaryFile = 'http://localhost/rhafi-personal-web/public/images/t-shirt.png';
+        $binaryFile = 'http://localhost/rhafi-personal-web/public/images/reachtoforgive.png';
         DB::table('works')->insert([
             [
                 'icon' => $binaryFile,
